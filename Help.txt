@@ -1,0 +1,58 @@
+for pushing the changes to the remote repository: "git push -u origin master"
+
+for pulling and merging the changes from the remote repository: " git pull https://github.com/farhanalws4u/intiquery.git master "
+
+
+colors in logo: 
+1.
+background: #EC6F66;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F3A183, #EC6F66);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F3A183, #EC6F66); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+2.
+background: #9D50BB;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+3.
+background: #56ab2f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+fonts :-
+Merriweather Bold
+
+font-family: merriweather, serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Merriweather Regular
+
+font-family: merriweather, serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Merriweather Italic
+
+font-family: merriweather, serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Merriweather Bold Italic
+
+font-family: merriweather, serif;
+
+font-weight: 700;
+
+font-style: italic;
+
