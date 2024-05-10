@@ -1,0 +1,90 @@
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 50px;
+}
+
+.logoText {
+  font-size: 25px;
+  background-image: linear-gradient(45deg, #6e48aa, #9d50bb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  text-align: center;
+  font-family: merriweather;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 13px;
+  margin-left: -10px;
+}
+
+.userAvatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.searchBar {
+  width: 400px;
+}
+
+.searchBar:focus-within {
+  box-shadow: 1px 1px 5px #937cb9;
+}
+
+.link {
+  color: #808080;
+  text-decoration: none;
+}
+.link:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-left: 40px;
+  }
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+  }
+  .searchBar {
+    width: 300px;
+    transform: scale(0.9);
+  }
+}
+@media only screen and (max-width: 620px) {
+  .logo {
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+  }
+  .userAvatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .searchBar {
+    width: 280px;
+    transform: scale(0.85);
+    position: absolute;
+    top: 20%;
+    left: 0;
+  }
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+  .userAvatar {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+}

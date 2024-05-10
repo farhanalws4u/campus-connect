@@ -1,0 +1,24 @@
+.answer {
+  display: block;
+  max-width: 700px;
+  color: #808080;
+  font-size: 16px;
+  font-family: merriweather;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  padding: 20px 0;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .answer {
+    font-size: 14px;
+    max-width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .answer {
+    font-size: 14px;
+    max-width: 290px;
+  }
+}
