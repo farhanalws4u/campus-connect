@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// const url = "https://intiquerybackend.onrender.com";
-const url = "http://localhost:5000";
+const url = `https://campus-connect-1-a1tf.onrender.com`;
+// const url = "http://localhost:5000";
 export const registerUser = async (userData) => {
   return await axios.post(`${url}/auth/register`, userData);
 };
