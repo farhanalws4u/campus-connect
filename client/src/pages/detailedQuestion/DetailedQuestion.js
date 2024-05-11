@@ -65,7 +65,10 @@ function DetailedQuestion() {
     const _answer = answer;
     setAnswer("");
     dispatch(
-      submitAnswer({ answer: _answer, questionId: id, user: currentUser })
+      submitAnswer(
+        { answer: _answer, questionId: id, user: currentUser },
+        question[0]
+      )
     );
   };
   if (allAnswers === {}) {

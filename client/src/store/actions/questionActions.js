@@ -8,6 +8,7 @@ import {
 } from "../../constants/actionTypes";
 
 import * as api from "../../api/questionApi";
+import { sendMail } from "../../utils/sendMail";
 
 export const submitQuestion = (formData, navigate) => async (dispatch) => {
   try {
@@ -45,12 +46,20 @@ export const setCurrentQuestion = (id) => (dispatch) => {
   dispatch(setUserLoading(false));
 };
 
-export const submitAnswer = (ansData) => async (dispatch) => {
+export const submitAnswer = (ansData, question) => async (dispatch) => {
   try {
     dispatch(setUserLoading(true));
     const { data } = await api.submitAnswer(ansData);
+    console.log(question);
 
     dispatch({ type: SUBMIT_ANSWER, payload: data });
+    // send mail for the ans.
+    sendMail(
+      ansData.user.name,
+      question.user.email,
+      ansData.answer,
+      question.title
+    );
 
     dispatch(setUserLoading(false));
   } catch (error) {
