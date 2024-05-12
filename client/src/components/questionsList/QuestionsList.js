@@ -5,6 +5,8 @@ import {
   Container,
   ButtonBase,
   Paper,
+  Input,
+  TextField,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -13,6 +15,7 @@ import { getQuestions } from "../../store/actions/questionActions";
 import moment from "moment";
 import { getAnswers } from "../../store/actions/questionActions";
 import { getUserData } from "../../store/actions/userActions";
+import SearchBar from "material-ui-search-bar";
 
 function QuestionsList() {
   const navigate = useNavigate();
@@ -34,6 +37,10 @@ function QuestionsList() {
     const filterAnswers = answers.filter((ans) => ans.questionId === id);
     return filterAnswers.length;
   };
+
+  const [searchString, setSearchString] = useState("");
+
+  const handleSearch = () => {};
 
   return (
     <div>
@@ -80,6 +87,23 @@ function QuestionsList() {
             Ask Query
           </Button>
         </Grid>
+
+        <Container
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            marginBottom: "50px",
+          }}
+        >
+          <SearchBar
+            value={searchString}
+            onChange={(newValue) => setSearchString(newValue)}
+            onRequestSearch={() => handleSearch()}
+            classes={{ width: "400px" }}
+            placeholder="Search Question..."
+          />
+        </Container>
 
         {/* questions container */}
 
