@@ -2,7 +2,7 @@ import React from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import LoadingOverlay from "react-loading-overlay";
 
-function LoadingOverlayComp({ children, active }) {
+function LoadingOverlayComp({ children, active, color = "#fff" }) {
   return (
     <LoadingOverlay
       active={active}

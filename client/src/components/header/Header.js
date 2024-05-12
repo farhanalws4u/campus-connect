@@ -71,7 +71,7 @@ const ResponsiveAppBar = () => {
               <Avatar className="userAvatar" src={userData?.photoUrl} />
             </IconButton>
           </Tooltip>
-          <Button
+          {/* <Button
             onClick={handleLogOut}
             variant="contained"
             sx={{
@@ -83,7 +83,10 @@ const ResponsiveAppBar = () => {
             }}
           >
             Log Out
-          </Button>
+          </Button> */}
+          <button className="logoutButton" onClick={handleLogOut}>
+            Log Out
+          </button>
         </Box>
       </Container>
     </AppBar>

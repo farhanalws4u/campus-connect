@@ -40,6 +40,24 @@
   }
 }
 
+.logoutButton {
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-family: merriweather;
+  background-color: #6e48aa;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px;
+  font-size: 13px;
+  box-shadow: #808080 3px 3px 5px;
+  /* display: none; */
+}
+.logoutButton:hover {
+  background-color: #ec6f66;
+}
+
 .link {
   color: #808080;
   text-decoration: none;
