@@ -6,10 +6,9 @@ import Footer from "../../components/footer/Footer";
 
 function Home(props) {
   return (
-    <Box>
+    <Box sx={{ backgroundColor: "#f4eeff" }}>
       <Header />
       <QuestionsList />
-
       <Footer />
     </Box>
   );

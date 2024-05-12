@@ -34,6 +34,12 @@
   box-shadow: 1px 1px 5px #937cb9;
 }
 
+@media only screen and (max-width: 500px) {
+  .logoText {
+    font-size: 18px;
+  }
+}
+
 .link {
   color: #808080;
   text-decoration: none;

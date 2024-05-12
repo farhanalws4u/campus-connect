@@ -295,7 +295,14 @@ function Proflle() {
   };
 
   return (
-    <Box>
+    <Box
+      sx={{
+        backgroundColor: "#f4eeff",
+        height: "fit-content",
+        maxHeight: "fit-content",
+        minHeight: "100%",
+      }}
+    >
       <Header />
       <DialogForm />
       <Container maxWidth="md" sx={{ marginTop: "20px" }}>

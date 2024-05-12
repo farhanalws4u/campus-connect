@@ -78,7 +78,12 @@ function DetailedQuestion() {
       <Box>
         <Container
           maxWidth="md"
-          sx={{ marginTop: 5, paddingBottom: "100px", height: "fit-content" }}
+          sx={{
+            marginTop: 5,
+            paddingBottom: "100px",
+            height: "fit-content",
+            backgroundColor: "#f4eeff",
+          }}
         >
           {/* question section  */}
           <Box>

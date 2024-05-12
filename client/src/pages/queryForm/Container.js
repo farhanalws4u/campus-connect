@@ -6,7 +6,7 @@ import { Box } from "@mui/system";
 
 function Container() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#f4eeff" }}>
       <Header />
       <QueryForm />
       <Footer />

@@ -5,7 +5,7 @@ import Footer from "../../components/footer/Footer";
 
 function Container() {
   return (
-    <div>
+    <div style={{ backgroundColor: "#f4eeff" }}>
       <Header />
       <DetailedQuestion />
       <Footer />

@@ -42,6 +42,7 @@ function QuestionsList() {
           marginTop: 2,
           paddingBottom: "100px",
           height: questions.length === 0 ? "100vh" : "fit-content",
+          backgroundColor: "#f4eeff",
         }}
       >
         <Grid
@@ -57,7 +58,7 @@ function QuestionsList() {
           <Typography
             sx={{
               fontFamily: "merriweather",
-              fontSize: { lg: "45px", md: "45px", sm: "30px", xs: "30px" },
+              fontSize: { lg: "45px", md: "45px", sm: "30px", xs: "25px" },
               borderLeft: "5px solid #6e48aa",
               paddingLeft: "15px",
               borderTopLeftRadius: "5px",
@@ -66,12 +67,12 @@ function QuestionsList() {
           >
             Top Questions
           </Typography>
+
           <Button
             onClick={() => navigate("/queryForm")}
             sx={{
               fontFamily: "merriweather",
               backgroundColor: "#EC6F66",
-
               "&:hover": { backgroundColor: "#6E48AA" },
             }}
             variant="contained"
